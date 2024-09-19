@@ -33,13 +33,13 @@
             <h3 class="text-sm">Michelle Appleton</h3>
             <p class="text-sm">28 Jun 2020</p>
             <div>
-                <img src="../images/icon-share.svg" class="justify-end w-6 h-6" id="share">
+                <img src="../images/icon-share.svg" class="justify-end w-6 h-6" id="shareButton" onclick=""  >
             </div>
             
 
 
          </div>
-         <div class="bg-[hsl(214,17%,51%)] flex h-10 justify-between hidden" id="socialMediaIcons" >
+         <div class="bg-[hsl(214,17%,51%)] flex h-10 justify-between hidden" id="socialIcons" >
             <p>SHARE</p>
             <img src="../images/icon-facebook.svg" class="w-6 h-6">
             <img src="../images/icon-twitter.svg" class="w-6 h-6">
@@ -52,15 +52,16 @@
 
 
 <script>
-    document.getElementById('share').onclick = function(){
-        const socialMediaIcons=document.getElementById('socialMediaIcons');
-        
-        if(socialMediaIcons.style.display ==='hidden'){
-            socialMediaIcons.style.display ==='flex';
-        }else{
-            socialMediaIcons.style.display ==='hidden';
-        }
+   
+      
+    document.getElementById("shareButton").addEventListener("click", function() {
+    var socialIcons = document.getElementById("socialIcons");
+  if (socialIcons.style.display === "hidden" || socialIcons.style.display === "") {
+        socialIcons.style.display = "flex";
+    } else {
+        socialIcons.style.display = "hidden";
     }
+});
 
 </script>
 </body>
