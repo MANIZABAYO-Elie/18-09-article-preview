@@ -12,33 +12,56 @@
  
 </head>
 <body class="justify-center items-center bg-[hsl(210,46%,95%)]">
-     <div class="flex items-center justify-center place-content-center bg-white w- h-96 rounded-md text-lg" >
-        <div>
+<div class="flex  bg-white w-[800px] h-96 rounded-2xl text-lg m-auto mt-[150px] sm:col-span-1 " >
+        <div class="">
             <img src="../images/drawers.jpg" class="w-96 h-96">
         </div>
-        <div class="pl-10" >
+        <div class="pl-10">
                
-        <h2 class="text-xl">Shift the overall look and feel by<br> 
+        <h2 class="text-lg pt-16 sm:col-span-1">Shift the overall look and feel by<br> 
             adding these wonderful touches to  <br> 
             furniture in your home
         </h2>
-        <p>
+        <p class="text-sm pt-10">
             Ever been in a room and felt like something was missing?<br>
             Perhaps it felt slightly bare and uninviting. I’ve got some <br>
             simple tips to help you make any room feel complete.
-          
-
         </p>
         <div class="flex pt-8">
-            <img src="../images/avatar-michelle.jpg" class="h-16 w-16 rounded-full object-cover">
-            <h3>Michelle Appleton</h3>
-            <p> 28 Jun 2020</p>
+            <img src="../images/avatar-michelle.jpg" class="h-14 w-14 rounded-full object-cover">
+
+            <h3 class="text-sm">Michelle Appleton</h3>
+            <p class="text-sm">28 Jun 2020</p>
+            <div>
+                <img src="../images/icon-share.svg" class="justify-end w-6 h-6" id="share">
+            </div>
+            
 
 
+         </div>
+         <div class="bg-[hsl(214,17%,51%)] flex h-10 justify-between hidden" id="socialMediaIcons" >
+            <p>SHARE</p>
+            <img src="../images/icon-facebook.svg" class="w-6 h-6">
+            <img src="../images/icon-twitter.svg" class="w-6 h-6">
+            <img src="../images/icon-pinterest.svg" class="w-6 h-6">
         </div>
+        
        </div>
     </div>
     </div>
 
+
+<script>
+    document.getElementById('share').onclick = function(){
+        const socialMediaIcons=document.getElementById('socialMediaIcons');
+        
+        if(socialMediaIcons.style.display ==='hidden' || socialMediaIcons.style.display===""){
+            socialMediaIcons.style.display ==='flex';
+        }else{
+            socialMediaIcons.style.display ==='hidden';
+        }
+    }
+
+</script>
 </body>
 </html>
